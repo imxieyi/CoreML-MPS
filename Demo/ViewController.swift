@@ -82,7 +82,7 @@ class ViewController: UIViewController {
             DispatchQueue.main.async {
                 let encodingTime = endEncodingTime - startTime
                 let runTime = endTime - endEncodingTime
-                self.timeLabel.text = "\(encodingTime),\(runTime)"
+                self.timeLabel.text = "encode \(encodingTime), run \(runTime)"
                 self.runButton.isEnabled = true
                 self.afterView.image = outImage
             }
