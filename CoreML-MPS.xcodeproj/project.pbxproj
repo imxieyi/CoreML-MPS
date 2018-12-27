@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A80CB7221D4A098006154E3 /* UIImage+MTLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB6E21D4A098006154E3 /* UIImage+MTLTexture.swift */; };
+		8A80CB7421D4A098006154E3 /* MTLTexture+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB7021D4A098006154E3 /* MTLTexture+Array.swift */; };
+		8A80CB7521D4A098006154E3 /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB7121D4A098006154E3 /* UIImage+RawBytes.swift */; };
+		8A80CB7721D4A132006154E3 /* libCoreML-MPS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB476BF21CD130000C0DCE0 /* libCoreML-MPS.a */; };
+		8A80CB7921D4A1D9006154E3 /* anime_noise3_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB7821D4A1D9006154E3 /* anime_noise3_model.mlmodel */; };
+		8A80CB7D21D4A550006154E3 /* fillalpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB7C21D4A550006154E3 /* fillalpha.metal */; };
+		8A80CB7F21D4A570006154E3 /* FillAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB7E21D4A570006154E3 /* FillAlpha.swift */; };
+		8A80CB8121D4A641006154E3 /* Float16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80CB6F21D4A098006154E3 /* Float16.swift */; };
+		8A80CB8421D4A940006154E3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A80CB8321D4A940006154E3 /* test.png */; };
+		8A9DC43321D497F70081CD69 /* anime_scale2x_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A9DC43221D497F70081CD69 /* anime_scale2x_model.mlmodel */; };
 		8AB476AC21CD12D300C0DCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB476AB21CD12D300C0DCE0 /* AppDelegate.swift */; };
 		8AB476AE21CD12D300C0DCE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB476AD21CD12D300C0DCE0 /* ViewController.swift */; };
 		8AB476B121CD12D300C0DCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB476AF21CD12D300C0DCE0 /* Main.storyboard */; };
@@ -34,6 +44,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A80CB6E21D4A098006154E3 /* UIImage+MTLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+MTLTexture.swift"; sourceTree = "<group>"; };
+		8A80CB6F21D4A098006154E3 /* Float16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float16.swift; sourceTree = "<group>"; };
+		8A80CB7021D4A098006154E3 /* MTLTexture+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTLTexture+Array.swift"; sourceTree = "<group>"; };
+		8A80CB7121D4A098006154E3 /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		8A80CB7821D4A1D9006154E3 /* anime_noise3_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = anime_noise3_model.mlmodel; sourceTree = "<group>"; };
+		8A80CB7C21D4A550006154E3 /* fillalpha.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = fillalpha.metal; sourceTree = "<group>"; };
+		8A80CB7E21D4A570006154E3 /* FillAlpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillAlpha.swift; sourceTree = "<group>"; };
+		8A80CB8321D4A940006154E3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		8A9DC43221D497F70081CD69 /* anime_scale2x_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = anime_scale2x_model.mlmodel; sourceTree = "<group>"; };
 		8AB476A321CD12A600C0DCE0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8AB476A421CD12AE00C0DCE0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8AB476A921CD12D300C0DCE0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A80CB7721D4A132006154E3 /* libCoreML-MPS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,11 +91,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A80CB7621D4A132006154E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A80CB8021D4A5A3006154E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A80CB6F21D4A098006154E3 /* Float16.swift */,
+				8A80CB7021D4A098006154E3 /* MTLTexture+Array.swift */,
+				8A80CB6E21D4A098006154E3 /* UIImage+MTLTexture.swift */,
+				8A80CB7121D4A098006154E3 /* UIImage+RawBytes.swift */,
+				8A80CB7C21D4A550006154E3 /* fillalpha.metal */,
+				8A80CB7E21D4A570006154E3 /* FillAlpha.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A80CB8221D4A657006154E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A9DC43221D497F70081CD69 /* anime_scale2x_model.mlmodel */,
+				8A80CB7821D4A1D9006154E3 /* anime_noise3_model.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8AB476AA21CD12D300C0DCE0 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8A80CB8221D4A657006154E3 /* Models */,
+				8A80CB8021D4A5A3006154E3 /* Utils */,
 				8AB476AB21CD12D300C0DCE0 /* AppDelegate.swift */,
 				8AB476AD21CD12D300C0DCE0 /* ViewController.swift */,
+				8A80CB8321D4A940006154E3 /* test.png */,
 				8AB476AF21CD12D300C0DCE0 /* Main.storyboard */,
 				8AB476B221CD12D400C0DCE0 /* Assets.xcassets */,
 				8AB476B421CD12D400C0DCE0 /* LaunchScreen.storyboard */,
@@ -106,6 +158,7 @@
 				8AB476AA21CD12D300C0DCE0 /* Demo */,
 				8AB476C021CD130000C0DCE0 /* CoreML-MPS */,
 				8AFC4DBF21CD121A00BDCE60 /* Products */,
+				8A80CB7621D4A132006154E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AB476D521CD13B500C0DCE0 /* .gitignore in Resources */,
+				8A80CB8421D4A940006154E3 /* test.png in Resources */,
 				8AB476B621CD12D400C0DCE0 /* LaunchScreen.storyboard in Resources */,
 				8AB476B321CD12D400C0DCE0 /* Assets.xcassets in Resources */,
 				8AB476B121CD12D300C0DCE0 /* Main.storyboard in Resources */,
@@ -212,7 +266,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AB476AE21CD12D300C0DCE0 /* ViewController.swift in Sources */,
+				8A80CB7421D4A098006154E3 /* MTLTexture+Array.swift in Sources */,
+				8A80CB7521D4A098006154E3 /* UIImage+RawBytes.swift in Sources */,
+				8A80CB7221D4A098006154E3 /* UIImage+MTLTexture.swift in Sources */,
+				8A80CB7921D4A1D9006154E3 /* anime_noise3_model.mlmodel in Sources */,
+				8A80CB8121D4A641006154E3 /* Float16.swift in Sources */,
+				8A80CB7F21D4A570006154E3 /* FillAlpha.swift in Sources */,
+				8A80CB7D21D4A550006154E3 /* fillalpha.metal in Sources */,
 				8AB476AC21CD12D300C0DCE0 /* AppDelegate.swift in Sources */,
+				8A9DC43321D497F70081CD69 /* anime_scale2x_model.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

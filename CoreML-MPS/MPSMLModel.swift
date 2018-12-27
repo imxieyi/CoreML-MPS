@@ -100,7 +100,6 @@ public class MPSMLModel {
         if mpsDes != nil {
             var conv: MPSNNFilterNode
             if deconv {
-                mpsDes?.setStride(x: 2, y: 2)
                 conv = MPSCNNConvolutionTransposeNode(source: image, weights: mpsDes!)
             } else {
                 conv = MPSCNNConvolutionNode(source: image, weights: mpsDes!)
@@ -109,7 +108,7 @@ public class MPSMLModel {
             image = conv.resultImage
         }
         
-        guard let graph = MPSNNGraph(device: device, resultImage: image) else {
+        guard let graph = MPSNNGraph(device: device, resultImage: image, resultImageIsNeeded: true) else {
             throw MLModelError.cannotCreateGraph("Failed to create MPSNN graph for \(rawModel.name)")
         }
         self.graph = graph
