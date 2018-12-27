@@ -12,6 +12,8 @@ The demo is an implementation of [waifu2x-ios](https://github.com/imxieyi/waifu2
 
 This is generally a hack and is not documented by Apple in any forms. **DO NOT** try to use this in production environment since you will never know when Apple will change the compiled mlmodel format.
 
+The maximum size of image supported is dependent on actual device. The GPU memory must be able to hold temporary texture of maximum number of feature channels. For details please refer to [Metal Feature Set Tables](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+
 ## Screenshot
 
 ![demo](/screenshot.jpeg)
