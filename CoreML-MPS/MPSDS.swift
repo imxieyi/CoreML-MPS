@@ -111,9 +111,10 @@ class MPSDS: NSObject, MPSCNNConvolutionDataSource {
         desc.strideInPixelsX = xStride
         desc.strideInPixelsY = yStride
         if relu {
-            desc.setNeuronType(.reLU, parameterA: alpha, parameterB: 0)
+            desc.fusedNeuronDescriptor.neuronType = .reLU
+            desc.fusedNeuronDescriptor.a = alpha
         } else {
-            desc.setNeuronType(.none, parameterA: 0, parameterB: 0)
+            desc.fusedNeuronDescriptor.neuronType = .none
         }
         return desc
     }
