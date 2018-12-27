@@ -29,6 +29,7 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Close", style: .default, handler: { (_) in
                 alert.dismiss(animated: true, completion: nil)
             }))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
